@@ -1,1 +1,2 @@
-# Game
+print"Clear"
+print"a ticket"
