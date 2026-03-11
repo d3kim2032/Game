@@ -1,0 +1,9 @@
+{
+  "name": "space-chat-app",
+  "version": "1.0.0",
+  "description": "Space-based chat with password-protected rooms",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

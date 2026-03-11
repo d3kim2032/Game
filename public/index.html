@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Chat</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section id="auth" class="card">
+        <h1>Space Chat</h1>
+        <p>Create or join a password-protected space and chat in real-time.</p>
+
+        <div class="field-group">
+          <label for="username">Your name</label>
+          <input id="username" type="text" placeholder="e.g. Alex" />
+        </div>
+
+        <div class="field-group">
+          <label for="spaceName">Space name</label>
+          <input id="spaceName" type="text" placeholder="e.g. game-night" />
+        </div>
+
+        <div class="field-group">
+          <label for="password">Space password</label>
+          <input id="password" type="password" placeholder="Enter password" />
+        </div>
+
+        <div class="actions">
+          <button id="createBtn">Create Space</button>
+          <button id="joinBtn" class="secondary">Join Space</button>
+        </div>
+        <p id="error" class="error"></p>
+      </section>
+
+      <section id="chat" class="card hidden">
+        <div class="chat-header">
+          <h2 id="spaceTitle"></h2>
+          <p id="memberCount"></p>
+        </div>
+
+        <ul id="messages" class="messages"></ul>
+
+        <form id="messageForm" class="message-form">
+          <input id="messageInput" type="text" placeholder="Type a message..." autocomplete="off" required />
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
